@@ -87,11 +87,30 @@
   height: calc(100vh - 150px);
   background-color: $light-green;
   .chat-box {
+  padding: 46px 40px 0 40px;
     height: calc(100vh - 150px - 90px);
+    overflow: auto;
   }
 
   .message {
-
+    margin-bottom: 40px;
+    &__user {
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+    }
+    &__time {
+      display: inline-block;
+      font-size: 14px;
+      margin-left: 15px;
+    }
+    &__content {
+      margin-top: 10px;
+    }
+    &__image {
+      width: 200px;
+      object-fit: contain;
+    }
   }
 
   .post-box {
@@ -103,7 +122,7 @@
       float: left;
       &__text {
         height: 50px;
-        width: calc(100vw - 300px - 250px);
+        width: calc(100vw - 300px - 300px);
         border:none;
       }
       &__file {
@@ -115,9 +134,10 @@
     float: right;
     height: 50px;
     padding: 0 30px;
-    background-color: $dark-green;
-    color:white;
+    background-color: $green;
+    color:$black-green;
     font-size: 16px;
+    border:none;
     }
   }
 }
