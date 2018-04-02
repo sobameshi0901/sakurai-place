@@ -1,0 +1,124 @@
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+
+}
+
+.side-bar {
+  float: left;
+  width:300px;
+  color:white;
+}
+
+
+.user {
+  padding: 35px 20px 0 20px;
+  height: 150px;
+  background-color: $black-green;
+  &__content {
+    &__name {
+      font-size: 20px;
+      font-weight: bold;
+      float: left;
+    }
+    &__icons {
+      float: right;
+      i {
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.groups {
+  padding:20px 20px 0 20px;
+  height: calc(100vh - 150px);
+  background-color: $dark-green;
+  .group {
+    &__name {
+      font-size: 15px;
+      padding-bottom: 5px;
+    }
+    &__message {
+      font-size: 11px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+
+
+.main {
+  float: right;
+  width: calc(100vw - 300px);
+}
+
+.chat-group{
+
+  padding: 0 40px;
+  height: 150px;
+  background-color: $green;
+  .chat-group-top{
+    &__name {
+      padding-top: 35px;
+      font-size: 20px;
+      float: left;
+    }
+    &__edit {
+      float: right;
+      margin-top: 28px;
+      padding: 10px 20px;
+      border: 1px solid $dark-green;
+      color: $dark-green;
+    }
+  }
+  .chat-group-bottom {
+    &__members {
+      padding-top: 15px;
+      font-size: 12px;
+      color: $grey;
+    }
+
+  }
+}
+
+.chat-main {
+  height: calc(100vh - 150px);
+  background-color: $light-green;
+  .chat-box {
+    height: calc(100vh - 150px - 90px);
+  }
+
+  .message {
+
+  }
+
+  .post-box {
+    background-color: $black-green;
+    height: 90px;
+    padding:20px 40px;
+    &__input {
+      background-color: white;
+      float: left;
+      &__text {
+        height: 50px;
+        width: calc(100vw - 300px - 250px);
+        border:none;
+      }
+      &__file {
+        height: 50px;
+        padding-right: 15px;
+      }
+    }
+    &__send {
+    float: right;
+    height: 50px;
+    padding: 0 30px;
+    background-color: $dark-green;
+    color:white;
+    font-size: 16px;
+    }
+  }
+}
+

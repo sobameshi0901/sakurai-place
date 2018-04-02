@@ -1,0 +1,40 @@
+.side-bar
+  .user
+    .user__content
+      .user__content__name
+        %p タイゾー
+      .user__content__icons
+        %i.fa.fa-cog
+        %i.fa.fa-pencil-square-o
+  .groups
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
+
+.main
+  .chat-group
+    .chat-group-top.clearfix
+      .chat-group-top__name 
+        %p 窓際族
+      .chat-group-top__edit
+        %a Edit
+    .chat-group-bottom
+      %p.chat-group-bottom__members MEMBER: タイゾー
+  .chat-main
+    .chat-box
+      .message
+        .message__content
+    .post-box
+      %form
+        .post-box__input
+          %input.post-box__input__text{type: 'text', name: 'content'}
+          %label.post-box__input__file
+            %input{type: 'file', name: 'file', style: 'display:none'}
+            %i.fa.fa-picture-o
+        %input.post-box__send{type: 'submit', value: 'SEND'}
