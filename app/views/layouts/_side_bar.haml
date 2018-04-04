@@ -1,0 +1,19 @@
+.side-bar
+  .user
+    .user__content
+      .user__content__name
+        %p=current_user.name
+      .user__content__icons
+        = link_to edit_user_path(current_user), class: 'btn' do
+          %i.fa.fa-cog
+        %i.fa.fa-pencil-square-o
+  .groups
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
+    .group
+      %p.group__name 窓際族
+      %p.group__message 追い込み部屋なう
